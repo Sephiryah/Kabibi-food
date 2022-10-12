@@ -177,7 +177,7 @@ header nav li:hover {
 
 .section01 {
   background: url(/ressource/assets/banner/imgbgcategory.jpg);
-  background-position: center;
+  background-position: contain;
   background-size: 1450px;
   background-repeat: no-repeat;
   width: 100%;
@@ -279,9 +279,31 @@ header nav li:hover {
   color: white;
 }
 
+.section01__foods {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
 .section01__foods--grid {
+  width: 90%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 20% 50% 30%;
+  grid-gap: 20px;
+}
+
+.section01__foods .section01__foods__first .section01__foods__first__img {
+  margin-top: 250px;
+}
+.section01__foods .section01__foods__third .section01__foods__third__img {
+  margin-top: 200px;
+}
+
+.section01__foods__second__img {
+  border-radius: 100%;
+  border: 30px solid white;
 }
 
 @font-face {
