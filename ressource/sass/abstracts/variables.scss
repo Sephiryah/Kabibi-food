@@ -1,2 +1,13 @@
 $themeColor: #B68C5A;
 $themeColorBright: #C8A96A;
+
+@mixin section01-categories {
+    background-color: $themeColorBright;
+    width: 100px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color:white;
+}

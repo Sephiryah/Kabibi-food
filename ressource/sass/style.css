@@ -175,6 +175,137 @@ header nav li:hover {
   border-radius: 5px;
 }
 
+.section01 {
+  background: url(/ressource/assets/banner/imgbgcategory.jpg);
+  background-position: contain;
+  background-size: 1450px;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+.section01 .section01__title {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section01 .section01__title .section01__title__h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+.section01 .section01__title .section01__title__sub {
+  font-family: sans-serif;
+}
+
+.section01__categories {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section01__categories--grid {
+  display: grid;
+  grid-template-columns: repeat(6, 100px);
+  grid-gap: 20px;
+}
+
+.section01__categories__cheeseburger {
+  background-color: #C8A96A;
+  width: 100px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+
+.section01__categories__pizza {
+  background-color: #C8A96A;
+  width: 100px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+
+.section01__categories__coffe {
+  background-color: #C8A96A;
+  width: 100px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+
+.section01__categories__chicken {
+  background-color: #C8A96A;
+  width: 100px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+
+.section01__categories__drink {
+  background-color: #C8A96A;
+  width: 100px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+
+.section01__categories__shrimp {
+  background-color: #C8A96A;
+  width: 100px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+
+.section01__foods {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.section01__foods--grid {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 20% 50% 30%;
+  grid-gap: 20px;
+}
+
+.section01__foods .section01__foods__first .section01__foods__first__img {
+  margin-top: 250px;
+}
+.section01__foods .section01__foods__third .section01__foods__third__img {
+  margin-top: 200px;
+}
+
+.section01__foods__second__img {
+  border-radius: 100%;
+  border: 30px solid white;
+}
+
 @font-face {
   font-family: fa;
   src: url("/ressource/font/fa-brands-400.woff2");
