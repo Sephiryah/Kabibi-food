@@ -1,7 +1,6 @@
-@font-face {
-    font-family: fa;
-    src: url("/ressource/font/fa-brands-400.woff2");
-}
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap');
+@import url('../sass_utils/_variables.scss');
+
 
 .flex {
     display: flex;
@@ -24,9 +23,9 @@ footer {
     flex-direction: column;
     padding-top: 3rem;
     padding-bottom: 2rem;
-    color: #9E9674;
-    font-family: fa;
+    color: $gray;
     width: 100%;
+    font-family: $Gill;
 }
 
 #footer__div--grid {
@@ -49,26 +48,33 @@ footer {
     }
 }
 
-
 #footer__img {
     position: absolute;
-    bottom: 16rem;
+    bottom: -46rem;
     width: 4rem;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 
 #footer_image {
     width: 12rem;
 }
 
-i {
+.fa-brands {
     padding: 0.5rem;
-    background-color: #262B2B;
+    background-color: $gray;
     border-radius: 10rem;
 }
 
+.fa-brands:hover {
+    background-color: $golden;
+    color: $white;
+}
+
 hr {
-    color: #262B2B;
-    width: 75%;
+    color: $gray;
+    width: 85%;
 }
 
 .font-size {
@@ -76,13 +82,43 @@ hr {
 }
 
 span {
-    color: orange;
+    color: $orange;
 }
 
 ul {
     padding-left: 0;
 }
 
-li {
-    margin-top: 1rem;
+ul a{
+    text-decoration: none;
+    color: $gray_golden;
 }
+li {
+    margin-top: 0.5rem;
+}
+ .footer__div--flex {
+    width: 85%;
+ }
+
+ h3 {
+    font-family: 'Old Standard TT', serif;
+    font-size : 25px;
+    color: $white;
+ }
+
+ input {
+    padding: 0.75rem;
+    max-width: 70%;
+    border: none;
+ }
+
+ button {
+    padding: 0.75rem 1rem;
+    color: $white;
+    background-color: #CAAE65;
+    border: none;
+ }
+
+ .font-size i{
+    color:$golden;
+ }

@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap');
+@import '../sass_utils/_variables.scss';
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 80%;
+    margin: 0 auto;
+    column-gap: 3rem;
+    margin-top: 5rem;
+}
+
+.Font-family-G {
+    font-family: $Gill;
+}
+
+.card {
+    background-color: $Light-gray;
+    max-width: 100%;
+    padding-bottom: 3rem;
+    
+    img {
+        max-width: 100%;
+        margin-bottom: 1.5rem;
+    }
+
+    p, a {
+        margin-left: 2rem;
+    }
+
+    i {
+        background-color: $Light-gray;
+    }
+
+    a{
+        display: block;
+        text-decoration: none;
+        color: black;
+        background-color: $white;
+        padding: 1rem;
+        margin-top: 2rem;
+        margin-right: 9rem;
+        border-radius: 0.5rem;
+        font-weight: bold;
+        font-size: 0.75em;
+    }
+
+    a:hover{
+        background-color: $golden;
+        color: $white;
+    }
+
+    .fa-circle-user, .fa-calendar-days {
+        background-color: transparent;
+        color: $golden;
+    }
+}   
+
+.background-text {
+    position: absolute;
+    font-size: 10em;
+    opacity: 0.02;
+    top: -7rem;
+}
+
+.inline {
+    display: inline;
+    font-size: 0.75em;
+}
+
+.center {
+    text-align: center;
+}
+
+.brand-img {
+    display: flex;
+    width: 80%;
+    margin: 5rem auto;
+    text-align: center;
+    justify-content: space-between;
+    
+    img{
+        max-width: 10%;
+    }
+}
+
+h2 {
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 0;
+    font-size: 3em;
+}
+
+.Times, h2, .background-text{
+    font-family: $Old;
+}

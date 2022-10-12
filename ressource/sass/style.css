@@ -1,84 +1,18 @@
-@font-face {
-  font-family: fa;
-  src: url("/ressource/font/fa-brands-400.woff2");
-}
-.flex {
-  display: flex;
-  align-items: center;
-}
+/* Error: Undefined variable.
+ *    ,
+ * 26 |     color: $gray;
+ *    |            ^^^^^
+ *    '
+ *   layout/_footer.scss 26:12  @import
+ *   main.scss 2:9              root stylesheet */
 
-.footer__div--flex {
-  justify-content: space-between;
-  width: 100%;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 26 \2502      color: $gray;\a    \2502             ^^^^^\a    \2575 \a   layout/_footer.scss 26:12  @import\a   main.scss 2:9              root stylesheet";
 }
-
-.margin {
-  margin-top: 0.6em;
-}
-
-footer {
-  background-image: url("/ressource/assets/footer/img-ng-footer.jpg");
-  background-size: contain;
-  background-position: center;
-  flex-direction: column;
-  padding-top: 3rem;
-  padding-bottom: 2rem;
-  color: #9E9674;
-  font-family: fa;
-  width: 100%;
-}
-
-#footer__div--grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 2fr 2fr;
-  column-gap: 3rem;
-  margin: 3rem 10rem;
-}
-
-#footer__div--grid ul {
-  list-style: none;
-  margin-top: 0;
-}
-
-#footer__div--grid p {
-  margin-top: 0;
-}
-
-#footer__img {
-  position: absolute;
-  bottom: 16rem;
-  width: 4rem;
-}
-
-#footer_image {
-  width: 12rem;
-}
-
-i {
-  padding: 0.5rem;
-  background-color: #262B2B;
-  border-radius: 10rem;
-}
-
-hr {
-  color: #262B2B;
-  width: 75%;
-}
-
-.font-size {
-  font-size: 0.7em;
-}
-
-span {
-  color: orange;
-}
-
-ul {
-  padding-left: 0;
-}
-
-li {
-  margin-top: 1rem;
-}
-
-/*# sourceMappingURL=style.css.map */
