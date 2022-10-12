@@ -175,6 +175,28 @@ header nav li:hover {
   border-radius: 5px;
 }
 
+.section01 {
+  background-color: rgba(252, 253, 201, 0.897);
+  width: 100%;
+  height: 100vh;
+}
+.section01 .section01__title {
+  background-color: red;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section01 .section01__title .section01__title__h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+.section01 .section01__title .section01__title__sub {
+  font-family: sans-serif;
+}
+
 @font-face {
   font-family: fa;
   src: url("/ressource/font/fa-brands-400.woff2");
