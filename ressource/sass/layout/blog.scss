@@ -1,6 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap');
 @import '../sass_utils/_variables.scss';
 
+.blognews{
+    font-family: $Gill;
+}
+
+.background-text {
+    position: absolute;
+    font-size: 10em;
+    opacity: 0.02;
+    top: -7rem;
+    font-family: $Old;
+}
+
+.blognews {
+    h2 {
+        text-align: center;
+        margin-top: 5rem;
+        margin-bottom: 0;
+        font-size: 3em;
+        font-family: $Old;
+    }
+}
+
+
+.center {
+    text-align: center;
+}
+
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -10,14 +37,15 @@
     margin-top: 5rem;
 }
 
-.Font-family-G {
-    font-family: $Gill;
-}
-
 .card {
-    background-color: $Light-gray;
+    background-color: $Light_gray;
     max-width: 100%;
     padding-bottom: 3rem;
+
+    .inline {
+        display: inline;
+        font-size: 0.75em;
+    }
     
     img {
         max-width: 100%;
@@ -50,27 +78,11 @@
         color: $white;
     }
 
-    .fa-circle-user, .fa-calendar-days {
+    i {
         background-color: transparent;
         color: $golden;
     }
 }   
-
-.background-text {
-    position: absolute;
-    font-size: 10em;
-    opacity: 0.02;
-    top: -7rem;
-}
-
-.inline {
-    display: inline;
-    font-size: 0.75em;
-}
-
-.center {
-    text-align: center;
-}
 
 .brand-img {
     display: flex;
@@ -84,13 +96,8 @@
     }
 }
 
-h2 {
-    text-align: center;
-    margin-top: 5rem;
-    margin-bottom: 0;
-    font-size: 3em;
-}
 
-.Times, h2, .background-text{
+
+.Times {
     font-family: $Old;
 }

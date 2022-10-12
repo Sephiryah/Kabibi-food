@@ -1,18 +1,199 @@
-/* Error: Undefined variable.
- *    ,
- * 26 |     color: $gray;
- *    |            ^^^^^
- *    '
- *   layout/_footer.scss 26:12  @import
- *   main.scss 2:9              root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 26 \2502      color: $gray;\a    \2502             ^^^^^\a    \2575 \a   layout/_footer.scss 26:12  @import\a   main.scss 2:9              root stylesheet";
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap"); /* font */
+/* Colors */
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap");
+.blognews {
+  font-family: "Gill Sans", sans-serif;
 }
+
+.background-text {
+  position: absolute;
+  font-size: 10em;
+  opacity: 0.02;
+  top: -7rem;
+  font-family: "Old Standard TT", sans-serif;
+}
+
+.blognews h2 {
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 0;
+  font-size: 3em;
+  font-family: "Old Standard TT", sans-serif;
+}
+
+.center {
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 80%;
+  margin: 0 auto;
+  column-gap: 3rem;
+  margin-top: 5rem;
+}
+
+.card {
+  background-color: #FAF7EF;
+  max-width: 100%;
+  padding-bottom: 3rem;
+}
+.card .inline {
+  display: inline;
+  font-size: 0.75em;
+}
+.card img {
+  max-width: 100%;
+  margin-bottom: 1.5rem;
+}
+.card p, .card a {
+  margin-left: 2rem;
+}
+.card i {
+  background-color: #FAF7EF;
+}
+.card a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  background-color: #FFFFFF;
+  padding: 1rem;
+  margin-top: 2rem;
+  margin-right: 9rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  font-size: 0.75em;
+}
+.card a:hover {
+  background-color: #CAAE65;
+  color: #FFFFFF;
+}
+.card i {
+  background-color: transparent;
+  color: #CAAE65;
+}
+
+.brand-img {
+  display: flex;
+  width: 80%;
+  margin: 5rem auto;
+  text-align: center;
+  justify-content: space-between;
+}
+.brand-img img {
+  max-width: 10%;
+}
+
+.Times {
+  font-family: "Old Standard TT", sans-serif;
+}
+
+/* font */
+/* Colors */
+.margin {
+  margin-top: 0.6em;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  background-image: url("/ressource/assets/footer/img-ng-footer.jpg");
+  background-size: contain;
+  background-position: center;
+  flex-direction: column;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  color: #262B2B;
+  width: 100%;
+  font-family: "Gill Sans", sans-serif;
+}
+footer hr {
+  color: #262B2B;
+  width: 85%;
+}
+
+.footer_image {
+  width: 12rem;
+}
+
+.information {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr 2fr;
+  column-gap: 3rem;
+  margin: 3rem 10rem;
+}
+.information h3 {
+  font-family: "Old Standard TT", sans-serif;
+  font-size: 25px;
+  color: #FFFFFF;
+}
+.information ul {
+  list-style: none;
+  list-style: none;
+  margin-top: 0;
+  padding-left: 0;
+}
+.information ul, .information p {
+  font-size: 0.7em;
+  color: #9E9674;
+}
+.information li {
+  margin-top: 0.5rem;
+}
+.information a {
+  text-decoration: none;
+  color: #9E9674;
+}
+.information p {
+  margin-top: 0;
+}
+.information input {
+  padding: 0.75rem;
+  max-width: 70%;
+  border: none;
+}
+.information button {
+  padding: 0.75rem 1rem;
+  color: #FFFFFF;
+  background-color: #CAAE65;
+  border: none;
+}
+.information i {
+  color: #FFFFFF;
+}
+
+.spoon {
+  position: absolute;
+  bottom: -46rem;
+  width: 4rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.footer_bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 85%;
+}
+.footer_bottom p {
+  font-size: 0.7em;
+  color: #9E9674;
+}
+.footer_bottom span {
+  color: orange;
+}
+.footer_bottom i {
+  padding: 0.5rem;
+  background-color: #262B2B;
+  border-radius: 10rem;
+  color: #9E9674;
+}
+.footer_bottom i:hover {
+  background-color: #CAAE65;
+  color: #FFFFFF;
+}
+
+/*# sourceMappingURL=style.css.map */
