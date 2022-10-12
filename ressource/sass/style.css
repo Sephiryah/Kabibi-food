@@ -1,3 +1,180 @@
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button, input, select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img, video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  height: 950px;
+  background-image: url(/ressource/assets/slider/img_bg_slider_home01.jpg);
+}
+header nav {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  margin: 25px 0px;
+  position: absolute;
+  font-family: sans-serif;
+}
+header nav a {
+  text-decoration: none;
+  color: white;
+}
+header nav ul {
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav li {
+  margin: 0;
+}
+header nav li:hover {
+  cursor: pointer;
+  color: #B68C5A;
+}
+
+.contactAndBooking {
+  width: 250px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.contactAndBooking .contactAndBooking__bookATable {
+  width: 130px;
+  display: flex;
+  justify-content: center;
+  background-color: #C8A96A;
+  padding: 15px 10px;
+  border-radius: 5px;
+  font-size: 10px;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+.contactAndBooking .contactAndBooking__phoneNumber {
+  display: flex;
+  align-items: center;
+}
+
+.sectionOne {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, black, transparent);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.rightContainer {
+  width: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rightContainer .rightContainer__iconContainer {
+  padding: 25px;
+  border-radius: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.428);
+  position: absolute;
+  right: 240px;
+  bottom: 260px;
+}
+.rightContainer .rightContainer__iconContainer .rightContainer__iconContainer__inner {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  border-radius: 100%;
+}
+.rightContainer .rightContainer__iconContainer .rightContainer__iconContainer__inner .rightContainer__icon {
+  width: 30px;
+}
+
+.leftContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.leftContainer .leftContainer__content {
+  width: 80%;
+  height: 670px;
+  margin-left: 150px;
+}
+
+.leftContainer__content__circle {
+  width: 150px;
+  position: absolute;
+  left: 650px;
+  top: 220px;
+}
+
+.leftContainer__content__title {
+  font-size: 9rem;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: lighter;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.leftContainer__content__menuLink a {
+  text-decoration: none;
+  color: white;
+  padding: 15px 30px;
+  font-size: 12px;
+  font-family: sans-serif;
+  font-weight: bolder;
+  text-transform: uppercase;
+  border: 1px solid rgba(255, 255, 255, 0.277);
+  border-radius: 5px;
+}
+
 @font-face {
   font-family: fa;
   src: url("/ressource/font/fa-brands-400.woff2");
