@@ -1,5 +1,18 @@
 @import '../sass_utils/variables';
 
+
+.bgtext-photo {
+    position: relative;
+
+    p {
+        position: absolute;
+        font-size: 160px;
+        opacity: 0.02;
+        top: -150px;
+        font-family: $Old;
+    }
+}
+
 .photo-gallery {
     font-family: $Gill;
     text-align: center;
@@ -9,6 +22,7 @@
     h2{
         font-family: $Old;
         font-size: 3em;
+        margin-bottom: 0;
     }
 
     a {
@@ -32,41 +46,81 @@
     margin-top: 8rem;
 
     div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
         width: 100%;
-        height: 100%;
+        height: 288px;
         color: $white;
-        text-align: center;
         line-height: center;
+        background-position: center;
+        background-size: cover;
+        color: transparent;
     }
 
     #egg {
         grid-column-start: 1;
         grid-column-end: 3;
-        background-image: url('/ressource/assets/gallery/img1gallerybox.jpg');
+        background-image: url(/ressource/assets/gallery/img1gallerybox.jpg);
+
+        &:hover {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/ressource/assets/gallery/img1gallerybox.jpg');
+            color: $white;
+            background-position: center;
+            background-size: cover;
+        }
     }
 
     #sandwich {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        background-image: url('/ressource/assets/gallery/img2gallerybox.jpg');
+        background-image: url(/ressource/assets/gallery/img2gallerybox.jpg);
+
+        &:hover {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/ressource/assets/gallery/img2gallerybox.jpg');
+            color: $white;
+        }
     }
 
     #pizza {
-        background-image: url('/ressource/assets/gallery/img3gallerybox.jpg');
+        background-image: url(/ressource/assets/gallery/img3gallerybox.jpg);
+
+        &:hover {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/ressource/assets/gallery/img3gallerybox.jpg');
+            color: $white;
+        }
     }
 
     #tomato {
-        background-image: url('/ressource/assets/gallery/img4gallerybox.jpg');
+        background-image: url(/ressource/assets/gallery/img4gallerybox.jpg);
+
+        &:hover {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/ressource/assets/gallery/img4gallerybox.jpg');
+            color: $white;
+        }
     }
 
     #meat {
-        background-image: url('/ressource/assets/gallery/img5gallerybox.jpg');
-    }
+        background-image: url(/ressource/assets/gallery/img5gallerybox.jpg);
 
+        &:hover {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/ressource/assets/gallery/img5gallerybox.jpg');
+            color: white;
+        }
+    }
     #burger {
         grid-column-start:3;
         grid-column-end: 5;
         background-image: url('/ressource/assets/gallery/img6gallerybox.jpg');
+        
+        &:hover{
+            background-image: url('/ressource/assets/gallery/img6gallerybox.jpg');
+            color: $white;
+        }
+    }
+
+    h3 {
+        font-family: $Old;
+        font-size: 2em;
+        margin-bottom: 0;
     }
 }

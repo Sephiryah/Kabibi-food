@@ -91,9 +91,16 @@ footer {
     
 }
 
+.img-container {
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
 .spoon {
     position: absolute;
-    bottom: -99rem;
+    bottom: -50px;
     width: 4rem;
     left: 0;
     right: 0;

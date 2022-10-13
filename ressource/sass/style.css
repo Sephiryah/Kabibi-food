@@ -2,6 +2,17 @@
 /* Colors */
 @import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap");
+.bgtext-photo {
+  position: relative;
+}
+.bgtext-photo p {
+  position: absolute;
+  font-size: 160px;
+  opacity: 0.02;
+  top: -150px;
+  font-family: "Old Standard TT", sans-serif;
+}
+
 .photo-gallery {
   font-family: "Gill Sans", sans-serif;
   text-align: center;
@@ -11,6 +22,7 @@
 .photo-gallery h2 {
   font-family: "Old Standard TT", sans-serif;
   font-size: 3em;
+  margin-bottom: 0;
 }
 .photo-gallery a {
   display: block;
@@ -32,36 +44,70 @@
   margin-top: 8rem;
 }
 .grid-gallery div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   width: 100%;
-  height: 100%;
+  height: 288px;
   color: #FFFFFF;
-  text-align: center;
   line-height: center;
+  background-position: center;
+  background-size: cover;
+  color: transparent;
 }
 .grid-gallery #egg {
   grid-column-start: 1;
   grid-column-end: 3;
-  background-image: url("/ressource/assets/gallery/img1gallerybox.jpg");
+  background-image: url(/ressource/assets/gallery/img1gallerybox.jpg);
+}
+.grid-gallery #egg:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/ressource/assets/gallery/img1gallerybox.jpg");
+  color: #FFFFFF;
+  background-position: center;
+  background-size: cover;
 }
 .grid-gallery #sandwich {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  background-image: url("/ressource/assets/gallery/img2gallerybox.jpg");
+  background-image: url(/ressource/assets/gallery/img2gallerybox.jpg);
+}
+.grid-gallery #sandwich:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/ressource/assets/gallery/img2gallerybox.jpg");
+  color: #FFFFFF;
 }
 .grid-gallery #pizza {
-  background-image: url("/ressource/assets/gallery/img3gallerybox.jpg");
+  background-image: url(/ressource/assets/gallery/img3gallerybox.jpg);
+}
+.grid-gallery #pizza:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/ressource/assets/gallery/img3gallerybox.jpg");
+  color: #FFFFFF;
 }
 .grid-gallery #tomato {
-  background-image: url("/ressource/assets/gallery/img4gallerybox.jpg");
+  background-image: url(/ressource/assets/gallery/img4gallerybox.jpg);
+}
+.grid-gallery #tomato:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/ressource/assets/gallery/img4gallerybox.jpg");
+  color: #FFFFFF;
 }
 .grid-gallery #meat {
-  background-image: url("/ressource/assets/gallery/img5gallerybox.jpg");
+  background-image: url(/ressource/assets/gallery/img5gallerybox.jpg);
+}
+.grid-gallery #meat:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/ressource/assets/gallery/img5gallerybox.jpg");
+  color: white;
 }
 .grid-gallery #burger {
   grid-column-start: 3;
   grid-column-end: 5;
   background-image: url("/ressource/assets/gallery/img6gallerybox.jpg");
+}
+.grid-gallery #burger:hover {
+  background-image: url("/ressource/assets/gallery/img6gallerybox.jpg");
+  color: #FFFFFF;
+}
+.grid-gallery h3 {
+  font-family: "Old Standard TT", sans-serif;
+  font-size: 2em;
+  margin-bottom: 0;
 }
 
 /* font */
@@ -85,10 +131,15 @@
   color: #FFFFFF;
   font-family: "Gill Sans", sans-serif;
 }
-.meeting .background-text {
-  font-family: "Old Standard TT", sans-serif;
+.meeting .bgtext-meet {
+  position: relative;
+}
+.meeting .bgtext-meet p {
   position: absolute;
-  top: -25px;
+  font-size: 160px;
+  opacity: 0.02;
+  top: -150px;
+  font-family: "Old Standard TT", sans-serif;
 }
 
 .chief-image-container {
@@ -105,11 +156,14 @@
 
 /* font */
 /* Colors */
-.background-text {
+.bgtext-blog {
+  position: relative;
+}
+.bgtext-blog p {
   position: absolute;
-  font-size: 10em;
+  font-size: 160px;
   opacity: 0.02;
-  top: 10rem;
+  top: -150px;
   font-family: "Old Standard TT", sans-serif;
 }
 
@@ -145,8 +199,8 @@
   padding-bottom: 3rem;
 }
 .card .inline {
-  display: inline;
-  font-size: 0.75em;
+  display: inline-block;
+  font-size: 0.65em;
 }
 .card img {
   max-width: 100%;
@@ -165,7 +219,7 @@
   background-color: #FFFFFF;
   padding: 1rem;
   margin-top: 2rem;
-  margin-right: 9rem;
+  margin-right: 8rem;
   border-radius: 0.5rem;
   font-weight: bold;
   font-size: 0.75em;
@@ -269,9 +323,16 @@ footer hr {
   color: #FFFFFF;
 }
 
+.img-container {
+  position: relative;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
 .spoon {
   position: absolute;
-  bottom: -99rem;
+  bottom: -50px;
   width: 4rem;
   left: 0;
   right: 0;
