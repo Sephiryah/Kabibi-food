@@ -19,8 +19,8 @@ footer {
     background-size: contain;
     background-position: center;
     flex-direction: column;
-    padding-top: 3rem;
-    padding-bottom: 2rem;
+    padding-top: 4rem;
+    padding-bottom: 5rem;
     color: $gray;
     width: 100%;
     font-family: $Gill;
@@ -43,6 +43,7 @@ footer {
 
     h3 {
         font-family: $Old;
+        font-weight: lighter;
         font-size : 25px;
         color: $white;
     }
@@ -92,7 +93,7 @@ footer {
 
 .spoon {
     position: absolute;
-    bottom: -46rem;
+    bottom: -99rem;
     width: 4rem;
     left: 0;
     right: 0;

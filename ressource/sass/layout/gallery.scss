@@ -1,0 +1,72 @@
+@import '../sass_utils/variables';
+
+.photo-gallery {
+    font-family: $Gill;
+    text-align: center;
+    padding-bottom: 12rem;
+    padding-top: 8rem;
+
+    h2{
+        font-family: $Old;
+        font-size: 3em;
+    }
+
+    a {
+        display: block;
+        text-decoration: none;
+        color: $black;
+        border: 1px solid $Light-gray;
+        padding: 1rem;
+        margin-top: 7rem;
+    }
+}
+
+.grid-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 8rem;
+
+    div {
+        width: 100%;
+        height: 100%;
+        color: $white;
+        text-align: center;
+        line-height: center;
+    }
+
+    #egg {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        background-image: url('/ressource/assets/gallery/img1gallerybox.jpg');
+    }
+
+    #sandwich {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-image: url('/ressource/assets/gallery/img2gallerybox.jpg');
+    }
+
+    #pizza {
+        background-image: url('/ressource/assets/gallery/img3gallerybox.jpg');
+    }
+
+    #tomato {
+        background-image: url('/ressource/assets/gallery/img4gallerybox.jpg');
+    }
+
+    #meat {
+        background-image: url('/ressource/assets/gallery/img5gallerybox.jpg');
+    }
+
+    #burger {
+        grid-column-start:3;
+        grid-column-end: 5;
+        background-image: url('/ressource/assets/gallery/img6gallerybox.jpg');
+    }
+}

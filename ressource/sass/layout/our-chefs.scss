@@ -1,0 +1,43 @@
+@import '../sass_utils/variables';
+
+.meeting{
+    background-image: url(/ressource/assets/our-chefs/imgbg-ourchefs.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 8rem;
+    padding-bottom: 12rem;
+    text-align: center;
+
+    h2 {
+        color: $white;
+        margin-bottom: 0;
+        font-size: 3em;
+        font-family: $Old;
+        font-weight:lighter;
+    }
+
+    p {
+        color: $white;
+        font-family: $Gill;
+    }
+
+    .background-text {
+        font-family: $Old;
+        position: absolute;
+        top: -25px;
+    }
+}
+
+.chief-image-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 2rem;
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 7rem;
+
+    img {
+        max-width: 100%;
+    }
+}
+

@@ -1,24 +1,129 @@
-@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap"); /* font */
+/* font */
 /* Colors */
 @import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap");
-.blognews {
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap");
+.photo-gallery {
   font-family: "Gill Sans", sans-serif;
+  text-align: center;
+  padding-bottom: 12rem;
+  padding-top: 8rem;
+}
+.photo-gallery h2 {
+  font-family: "Old Standard TT", sans-serif;
+  font-size: 3em;
+}
+.photo-gallery a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  border: 1px solid #FAF7EF;
+  padding: 1rem;
+  margin-top: 7rem;
 }
 
+.grid-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 2rem;
+  row-gap: 2rem;
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 8rem;
+}
+.grid-gallery div {
+  width: 100%;
+  height: 100%;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: center;
+}
+.grid-gallery #egg {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-image: url("/ressource/assets/gallery/img1gallerybox.jpg");
+}
+.grid-gallery #sandwich {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("/ressource/assets/gallery/img2gallerybox.jpg");
+}
+.grid-gallery #pizza {
+  background-image: url("/ressource/assets/gallery/img3gallerybox.jpg");
+}
+.grid-gallery #tomato {
+  background-image: url("/ressource/assets/gallery/img4gallerybox.jpg");
+}
+.grid-gallery #meat {
+  background-image: url("/ressource/assets/gallery/img5gallerybox.jpg");
+}
+.grid-gallery #burger {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  background-image: url("/ressource/assets/gallery/img6gallerybox.jpg");
+}
+
+/* font */
+/* Colors */
+.meeting {
+  background-image: url(/ressource/assets/our-chefs/imgbg-ourchefs.jpg);
+  background-size: cover;
+  background-position: center;
+  padding-top: 8rem;
+  padding-bottom: 12rem;
+  text-align: center;
+}
+.meeting h2 {
+  color: #FFFFFF;
+  margin-bottom: 0;
+  font-size: 3em;
+  font-family: "Old Standard TT", sans-serif;
+  font-weight: lighter;
+}
+.meeting p {
+  color: #FFFFFF;
+  font-family: "Gill Sans", sans-serif;
+}
+.meeting .background-text {
+  font-family: "Old Standard TT", sans-serif;
+  position: absolute;
+  top: -25px;
+}
+
+.chief-image-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 2rem;
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 7rem;
+}
+.chief-image-container img {
+  max-width: 100%;
+}
+
+/* font */
+/* Colors */
 .background-text {
   position: absolute;
   font-size: 10em;
   opacity: 0.02;
-  top: -7rem;
+  top: 10rem;
   font-family: "Old Standard TT", sans-serif;
 }
 
+.blognews {
+  font-family: "Gill Sans", sans-serif;
+  padding-top: 9rem;
+  padding-bottom: 5rem;
+}
 .blognews h2 {
   text-align: center;
-  margin-top: 5rem;
   margin-bottom: 0;
   font-size: 3em;
   font-family: "Old Standard TT", sans-serif;
+  font-weight: lighter;
 }
 
 .center {
@@ -28,10 +133,10 @@
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  width: 80%;
+  width: 75%;
   margin: 0 auto;
-  column-gap: 3rem;
-  margin-top: 5rem;
+  column-gap: 2rem;
+  margin-top: 8rem;
 }
 
 .card {
@@ -76,7 +181,7 @@
 
 .brand-img {
   display: flex;
-  width: 80%;
+  width: 75%;
   margin: 5rem auto;
   text-align: center;
   justify-content: space-between;
@@ -102,8 +207,8 @@ footer {
   background-size: contain;
   background-position: center;
   flex-direction: column;
-  padding-top: 3rem;
-  padding-bottom: 2rem;
+  padding-top: 4rem;
+  padding-bottom: 5rem;
   color: #262B2B;
   width: 100%;
   font-family: "Gill Sans", sans-serif;
@@ -125,6 +230,7 @@ footer hr {
 }
 .information h3 {
   font-family: "Old Standard TT", sans-serif;
+  font-weight: lighter;
   font-size: 25px;
   color: #FFFFFF;
 }
@@ -165,7 +271,7 @@ footer hr {
 
 .spoon {
   position: absolute;
-  bottom: -46rem;
+  bottom: -99rem;
   width: 4rem;
   left: 0;
   right: 0;
