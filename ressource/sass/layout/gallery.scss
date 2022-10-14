@@ -1,11 +1,5 @@
 @import '../sass_utils/variables';
 
-
-
-@media (min-width: 897px) and (max-width: 1080px) {
-
-}
-
 .section__div--bgtext {
     position: relative;
 
@@ -14,7 +8,7 @@
         position: absolute;
         font-size: 9em;
         opacity: 0.02;
-        top: -135px;
+        top: -45px;
         font-family: $Old;
     }
 }

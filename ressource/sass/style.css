@@ -1,7 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap");
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button, input, select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img, video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}
+
 /* font */
 /* Colors */
-@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap");
 .section__div--bgtext {
   position: relative;
 }
@@ -10,7 +54,7 @@
   position: absolute;
   font-size: 9em;
   opacity: 0.02;
-  top: -135px;
+  top: -45px;
   font-family: "Old Standard TT", sans-serif;
 }
 
@@ -170,10 +214,11 @@ h2 {
 }
 .section__div--card img {
   max-width: 100%;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 .section__div--card p, .section__div--card a {
   margin-left: 2rem;
+  margin-top: 1rem;
 }
 .section__div--card a {
   display: block;
@@ -181,7 +226,6 @@ h2 {
   color: black;
   background-color: #FFFFFF;
   padding: 1rem;
-  margin-top: 2rem;
   margin-right: 8rem;
   border-radius: 0.5rem;
   font-weight: bold;
@@ -216,7 +260,7 @@ h2 {
   justify-content: space-between;
 }
 #blog-brand-img img {
-  max-width: 10%;
+  width: 10%;
 }
 
 /* font */
@@ -241,6 +285,7 @@ footer {
 footer hr {
   color: #262B2B;
   width: 85%;
+  margin-bottom: 0.5em;
 }
 
 #footer-kabibi-img {
@@ -283,6 +328,7 @@ footer hr {
   padding: 0.75rem;
   max-width: 70%;
   border: none;
+  margin-top: 2em;
 }
 #div-info button {
   padding: 0.75rem 1rem;
@@ -302,15 +348,15 @@ footer hr {
   left: 0;
   right: 0;
   margin: auto;
+  width: 4rem;
 }
 
 .spoon {
   position: absolute;
-  bottom: -50px;
-  width: 4rem;
   left: 0;
   right: 0;
   margin: auto;
+  bottom: -50px;
 }
 
 #footer_bottom {

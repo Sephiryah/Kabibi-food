@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap');
-@import '../sass_utils/_variables.scss';
+@import '../sass_utils/variables.scss';
 
 #section-blog {
     font-family: $Gill;
@@ -27,11 +27,12 @@
     
     img {
         max-width: 100%;
-        margin-bottom: 1.5rem;
+        margin-bottom: 0.5rem;
     }
 
     p, a {
         margin-left: 2rem;
+        margin-top: 1rem;
     }
 
     a{
@@ -40,7 +41,6 @@
         color: black;
         background-color: $white;
         padding: 1rem;
-        margin-top: 2rem;
         margin-right: 8rem;
         border-radius: 0.5rem;
         font-weight: bold;
@@ -79,7 +79,7 @@
     justify-content: space-between;
     
     img{
-        max-width: 10%;
+        width: 10%;
     }
 }
 

@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap');
-@import '../sass_utils/_variables.scss';
+@import '../sass_utils/variables.scss';
 
 
 @mixin flex {
@@ -26,6 +26,7 @@ footer {
     hr {
         color: $gray;
         width: 85%;
+        margin-bottom: 0.5em;
     }
 }
 
@@ -74,6 +75,7 @@ footer {
         padding: 0.75rem;
         max-width: 70%;
         border: none;
+        margin-top: 2em;
     }
 
     button {
@@ -97,15 +99,15 @@ footer {
     left: 0;
     right: 0;
     margin: auto;
+    width: 4rem;
 }
 
 .spoon {
     position: absolute;
-    bottom: -50px;
-    width: 4rem;
     left: 0;
     right: 0;
     margin: auto;
+    bottom: -50px;
 }
 
 #footer_bottom {
