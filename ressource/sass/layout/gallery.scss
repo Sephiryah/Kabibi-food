@@ -1,17 +1,30 @@
 @import '../sass_utils/variables';
 
 
+
+@media (min-width: 897px) and (max-width: 1080px) {
+
+}
+
 .section__div--bgtext {
     position: relative;
 
     p {
         font-family: $Old;
         position: absolute;
-        font-size: 160px;
+        font-size: 9em;
         opacity: 0.02;
-        top: -150px;
+        top: -135px;
         font-family: $Old;
     }
+}
+
+h2 {
+    font-family: $Old;
+    font-size: 3em;
+    margin-bottom: 0;
+    font-size: lighter;
+    text-align: center;
 }
 
 #gallery-photo {
@@ -20,33 +33,28 @@
     padding-bottom: 12rem;
     padding-top: 8rem;
 
-    h2{
-        font-family: $Old;
-        font-size: 3em;
-        margin-bottom: 0;
-    }
-
     a {
-        display: block;
+        display: inline-block;
         text-decoration: none;
         color: $black;
         border: 1px solid $Light-gray;
         padding: 1rem;
         margin-top: 7rem;
+        width: 25%;
+
     }
 }
 
 #gallery-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
     column-gap: 2rem;
     row-gap: 2rem;
     width: 75%;
     margin: 0 auto;
     margin-top: 8rem;
 
-    div {
+    article {
         display: flex;
         align-items: center;
         justify-content: center;

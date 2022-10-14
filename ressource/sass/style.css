@@ -8,10 +8,18 @@
 .section__div--bgtext p {
   font-family: "Old Standard TT", sans-serif;
   position: absolute;
-  font-size: 160px;
+  font-size: 9em;
   opacity: 0.02;
-  top: -150px;
+  top: -135px;
   font-family: "Old Standard TT", sans-serif;
+}
+
+h2 {
+  font-family: "Old Standard TT", sans-serif;
+  font-size: 3em;
+  margin-bottom: 0;
+  font-size: lighter;
+  text-align: center;
 }
 
 #gallery-photo {
@@ -20,31 +28,26 @@
   padding-bottom: 12rem;
   padding-top: 8rem;
 }
-#gallery-photo h2 {
-  font-family: "Old Standard TT", sans-serif;
-  font-size: 3em;
-  margin-bottom: 0;
-}
 #gallery-photo a {
-  display: block;
+  display: inline-block;
   text-decoration: none;
   color: black;
   border: 1px solid #FAF7EF;
   padding: 1rem;
   margin-top: 7rem;
+  width: 25%;
 }
 
 #gallery-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
   column-gap: 2rem;
   row-gap: 2rem;
   width: 75%;
   margin: 0 auto;
   margin-top: 8rem;
 }
-#gallery-grid div {
+#gallery-grid article {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -123,10 +126,6 @@
 }
 #section-chiefs h2 {
   color: #FFFFFF;
-  margin-bottom: 0;
-  font-size: 3em;
-  font-family: "Old Standard TT", sans-serif;
-  font-weight: lighter;
 }
 #section-chiefs p {
   color: #FFFFFF;
@@ -150,13 +149,6 @@
   font-family: "Gill Sans", sans-serif;
   padding-top: 9rem;
   padding-bottom: 5rem;
-}
-#section-blog h2 {
-  text-align: center;
-  margin-bottom: 0;
-  font-size: 3em;
-  font-family: "Old Standard TT", sans-serif;
-  font-weight: lighter;
 }
 #section-blog #p-center {
   text-align: center;
@@ -327,10 +319,6 @@ footer hr {
   justify-content: space-between;
   width: 85%;
 }
-#footer_bottom p {
-  font-size: 0.7em;
-  color: #9E9674;
-}
 #footer_bottom span {
   color: orange;
 }
@@ -343,6 +331,46 @@ footer hr {
 #footer_bottom i:hover {
   background-color: #CAAE65;
   color: #FFFFFF;
+}
+
+#copyright {
+  font-size: 0.7em;
+  color: #9E9674;
+  width: 50%;
+}
+
+@media only screen and (max-width: 896px) {
+  .section__div--bgtext p {
+    font-size: 5.5em;
+    top: -60px;
+  }
+  h2 {
+    font-size: 2em;
+    color: #9E9674;
+  }
+  #gallery-grid {
+    column-gap: 1rem;
+    row-gap: 1rem;
+  }
+  #gallery-grid h3 {
+    font-size: 1.5em;
+  }
+  #gallery-grid p {
+    font-size: 0.75em;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  #gallery-grid article {
+    height: 10rem;
+  }
+  #blog-grid {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+    row-gap: 1rem;
+  }
+  #div-info {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
