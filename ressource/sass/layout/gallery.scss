@@ -1,16 +1,8 @@
-@import '../sass_utils/variables';
 
-.section__div--bgtext {
-    position: relative;
+@import '../sass_utils/mixin.scss';
 
-    p {
-        font-family: $Old;
-        position: absolute;
-        font-size: 9em;
-        opacity: 0.02;
-        top: -45px;
-        font-family: $Old;
-    }
+div:first-child {
+    @include bg-text;
 }
 
 h2 {
@@ -49,8 +41,7 @@ h2 {
     margin-top: 8rem;
 
     article {
-        display: flex;
-        align-items: center;
+        @include flex;
         justify-content: center;
         flex-direction: column;
         width: 100%;

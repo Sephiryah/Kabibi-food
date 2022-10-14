@@ -1,0 +1,28 @@
+@mixin flex {
+    display: flex;
+    align-items: center;
+}
+
+@mixin bg-text {
+    position: relative;
+
+    p {
+        font-family: $Old;
+        position: absolute;
+        font-size: 9em;
+        opacity: 0.02;
+        top: -45px;
+        font-family: $Old;
+    }
+}
+
+@mixin section01-categories {
+    background-color: $themeColorBright;
+    width: 100px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color:white;
+}
