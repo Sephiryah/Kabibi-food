@@ -2,10 +2,11 @@
 /* Colors */
 @import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap");
-.bgtext-photo {
+.section__div--bgtext {
   position: relative;
 }
-.bgtext-photo p {
+.section__div--bgtext p {
+  font-family: "Old Standard TT", sans-serif;
   position: absolute;
   font-size: 160px;
   opacity: 0.02;
@@ -13,18 +14,18 @@
   font-family: "Old Standard TT", sans-serif;
 }
 
-.photo-gallery {
+#gallery-photo {
   font-family: "Gill Sans", sans-serif;
   text-align: center;
   padding-bottom: 12rem;
   padding-top: 8rem;
 }
-.photo-gallery h2 {
+#gallery-photo h2 {
   font-family: "Old Standard TT", sans-serif;
   font-size: 3em;
   margin-bottom: 0;
 }
-.photo-gallery a {
+#gallery-photo a {
   display: block;
   text-decoration: none;
   color: black;
@@ -33,7 +34,7 @@
   margin-top: 7rem;
 }
 
-.grid-gallery {
+#gallery-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -43,7 +44,7 @@
   margin: 0 auto;
   margin-top: 8rem;
 }
-.grid-gallery div {
+#gallery-grid div {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -56,55 +57,55 @@
   background-size: cover;
   color: transparent;
 }
-.grid-gallery #egg {
+#gallery-grid #img-egg {
   grid-column-start: 1;
   grid-column-end: 3;
   background-image: url(/ressource/assets/gallery/img1gallerybox.jpg);
 }
-.grid-gallery #egg:hover {
+#gallery-grid #img-egg:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/ressource/assets/gallery/img1gallerybox.jpg");
   color: #FFFFFF;
   background-position: center;
   background-size: cover;
 }
-.grid-gallery #sandwich {
+#gallery-grid #img-sandwich {
   background-image: url(/ressource/assets/gallery/img2gallerybox.jpg);
 }
-.grid-gallery #sandwich:hover {
+#gallery-grid #img-sandwich:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/ressource/assets/gallery/img2gallerybox.jpg");
   color: #FFFFFF;
 }
-.grid-gallery #pizza {
+#gallery-grid #img-pizza {
   background-image: url(/ressource/assets/gallery/img3gallerybox.jpg);
 }
-.grid-gallery #pizza:hover {
+#gallery-grid #img-pizza:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/ressource/assets/gallery/img3gallerybox.jpg");
   color: #FFFFFF;
 }
-.grid-gallery #tomato {
+#gallery-grid #img-tomato {
   background-image: url(/ressource/assets/gallery/img4gallerybox.jpg);
 }
-.grid-gallery #tomato:hover {
+#gallery-grid #img-tomato:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/ressource/assets/gallery/img4gallerybox.jpg");
   color: #FFFFFF;
 }
-.grid-gallery #meat {
+#gallery-grid #img-meat {
   background-image: url(/ressource/assets/gallery/img5gallerybox.jpg);
 }
-.grid-gallery #meat:hover {
+#gallery-grid #img-meat:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/ressource/assets/gallery/img5gallerybox.jpg");
   color: white;
 }
-.grid-gallery #burger {
+#gallery-grid #img-burger {
   grid-column-start: 3;
   grid-column-end: 5;
   background-image: url("/ressource/assets/gallery/img6gallerybox.jpg");
 }
-.grid-gallery #burger:hover {
-  background-image: url("/ressource/assets/gallery/img6gallerybox.jpg");
+#gallery-grid #img-burger:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/ressource/assets/gallery/img6gallerybox.jpg");
   color: #FFFFFF;
 }
-.grid-gallery h3 {
+#gallery-grid h3 {
   font-family: "Old Standard TT", sans-serif;
   font-size: 2em;
   margin-bottom: 0;
@@ -112,7 +113,7 @@
 
 /* font */
 /* Colors */
-.meeting {
+#section-chiefs {
   background-image: url(/ressource/assets/our-chefs/imgbg-ourchefs.jpg);
   background-size: cover;
   background-position: center;
@@ -120,29 +121,18 @@
   padding-bottom: 12rem;
   text-align: center;
 }
-.meeting h2 {
+#section-chiefs h2 {
   color: #FFFFFF;
   margin-bottom: 0;
   font-size: 3em;
   font-family: "Old Standard TT", sans-serif;
   font-weight: lighter;
 }
-.meeting p {
+#section-chiefs p {
   color: #FFFFFF;
-  font-family: "Gill Sans", sans-serif;
-}
-.meeting .bgtext-meet {
-  position: relative;
-}
-.meeting .bgtext-meet p {
-  position: absolute;
-  font-size: 160px;
-  opacity: 0.02;
-  top: -150px;
-  font-family: "Old Standard TT", sans-serif;
 }
 
-.chief-image-container {
+#chief-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   column-gap: 2rem;
@@ -150,41 +140,29 @@
   margin: 0 auto;
   margin-top: 7rem;
 }
-.chief-image-container img {
+#chief-grid img {
   max-width: 100%;
 }
 
 /* font */
 /* Colors */
-.bgtext-blog {
-  position: relative;
-}
-.bgtext-blog p {
-  position: absolute;
-  font-size: 160px;
-  opacity: 0.02;
-  top: -150px;
-  font-family: "Old Standard TT", sans-serif;
-}
-
-.blognews {
+#section-blog {
   font-family: "Gill Sans", sans-serif;
   padding-top: 9rem;
   padding-bottom: 5rem;
 }
-.blognews h2 {
+#section-blog h2 {
   text-align: center;
   margin-bottom: 0;
   font-size: 3em;
   font-family: "Old Standard TT", sans-serif;
   font-weight: lighter;
 }
-
-.center {
+#section-blog #p-center {
   text-align: center;
 }
 
-.grid {
+#blog-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   width: 75%;
@@ -193,26 +171,19 @@
   margin-top: 8rem;
 }
 
-.card {
+.section__div--card {
   background-color: #FAF7EF;
   max-width: 100%;
   padding-bottom: 3rem;
 }
-.card .inline {
-  display: inline-block;
-  font-size: 0.65em;
-}
-.card img {
+.section__div--card img {
   max-width: 100%;
   margin-bottom: 1.5rem;
 }
-.card p, .card a {
+.section__div--card p, .section__div--card a {
   margin-left: 2rem;
 }
-.card i {
-  background-color: #FAF7EF;
-}
-.card a {
+.section__div--card a {
   display: block;
   text-decoration: none;
   color: black;
@@ -224,28 +195,36 @@
   font-weight: bold;
   font-size: 0.75em;
 }
-.card a:hover {
+.section__div--card a:hover {
   background-color: #CAAE65;
   color: #FFFFFF;
 }
-.card i {
+.section__div--card i {
   background-color: transparent;
+}
+
+.fa-circle-user, .fa-calendar-days {
   color: #CAAE65;
 }
 
-.brand-img {
+.div__p--inline {
+  display: inline-block;
+  font-size: 0.65em;
+}
+
+.div__p--font {
+  font-family: "Old Standard TT", sans-serif;
+}
+
+#blog-brand-img {
   display: flex;
   width: 75%;
   margin: 5rem auto;
   text-align: center;
   justify-content: space-between;
 }
-.brand-img img {
+#blog-brand-img img {
   max-width: 10%;
-}
-
-.Times {
-  font-family: "Old Standard TT", sans-serif;
 }
 
 /* font */
@@ -272,58 +251,61 @@ footer hr {
   width: 85%;
 }
 
-.footer_image {
+#footer-kabibi-img {
   width: 12rem;
 }
 
-.information {
+#div-info {
   display: grid;
   grid-template-columns: 1fr 1fr 2fr 2fr;
   column-gap: 3rem;
   margin: 3rem 10rem;
 }
-.information h3 {
+#div-info h3 {
   font-family: "Old Standard TT", sans-serif;
   font-weight: lighter;
   font-size: 25px;
   color: #FFFFFF;
 }
-.information ul {
+#div-info ul {
   list-style: none;
   list-style: none;
   margin-top: 0;
   padding-left: 0;
 }
-.information ul, .information p {
+#div-info ul, #div-info p {
   font-size: 0.7em;
   color: #9E9674;
 }
-.information li {
+#div-info li {
   margin-top: 0.5rem;
 }
-.information a {
+#div-info a {
   text-decoration: none;
   color: #9E9674;
 }
-.information p {
+#div-info p {
   margin-top: 0;
 }
-.information input {
+#div-info input {
   padding: 0.75rem;
   max-width: 70%;
   border: none;
 }
-.information button {
+#div-info button {
   padding: 0.75rem 1rem;
   color: #FFFFFF;
   background-color: #CAAE65;
   border: none;
 }
-.information i {
+#div-info i {
+  color: #CAAE65;
+}
+#div-info .fa-arrow-right {
   color: #FFFFFF;
 }
 
-.img-container {
+#container-img {
   position: relative;
   left: 0;
   right: 0;
@@ -339,26 +321,26 @@ footer hr {
   margin: auto;
 }
 
-.footer_bottom {
+#footer_bottom {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 85%;
 }
-.footer_bottom p {
+#footer_bottom p {
   font-size: 0.7em;
   color: #9E9674;
 }
-.footer_bottom span {
+#footer_bottom span {
   color: orange;
 }
-.footer_bottom i {
+#footer_bottom i {
   padding: 0.5rem;
   background-color: #262B2B;
   border-radius: 10rem;
   color: #9E9674;
 }
-.footer_bottom i:hover {
+#footer_bottom i:hover {
   background-color: #CAAE65;
   color: #FFFFFF;
 }

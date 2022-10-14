@@ -7,8 +7,6 @@
     align-items: center;
 }
 
-
-
 .margin {
     margin-top: 0.6em
 }
@@ -31,11 +29,11 @@ footer {
     }
 }
 
-.footer_image {
+#footer-kabibi-img {
     width: 12rem;
 }
 
-.information {
+#div-info {
     display: grid;
     grid-template-columns: 1fr 1fr 2fr 2fr;
     column-gap: 3rem;
@@ -84,14 +82,17 @@ footer {
         background-color: #CAAE65;
         border: none;
     }
-
     i {
+        color: $golden;
+    }
+
+    .fa-arrow-right {
         color: $white;
     }
     
 }
 
-.img-container {
+#container-img {
     position: relative;
     left: 0;
     right: 0;
@@ -107,7 +108,7 @@ footer {
     margin: auto;
 }
 
-.footer_bottom {
+#footer_bottom {
     @include flex;
     justify-content: space-between;
     width: 85%;

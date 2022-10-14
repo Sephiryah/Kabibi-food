@@ -1,19 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap');
 @import '../sass_utils/_variables.scss';
 
-.bgtext-blog {
-    position: relative;
-
-    p {
-    position: absolute;
-    font-size: 160px;
-    opacity: 0.02;
-    top: -150px;
-    font-family: $Old;
-    }
-}
-
-.blognews {
+#section-blog {
     font-family: $Gill;
     padding-top: 9rem;
     padding-bottom: 5rem;
@@ -25,14 +13,13 @@
         font-family: $Old;
         font-weight:lighter;
     }
+
+    #p-center {
+        text-align: center;
+    }
 }
 
-
-.center {
-    text-align: center;
-}
-
-.grid {
+#blog-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: 75%;
@@ -41,15 +28,10 @@
     margin-top: 8rem;
 }
 
-.card {
+.section__div--card {
     background-color: $Light_gray;
     max-width: 100%;
     padding-bottom: 3rem;
-
-    .inline {
-        display: inline-block;
-        font-size: 0.65em;
-    }
     
     img {
         max-width: 100%;
@@ -58,10 +40,6 @@
 
     p, a {
         margin-left: 2rem;
-    }
-
-    i {
-        background-color: $Light-gray;
     }
 
     a{
@@ -84,12 +62,24 @@
 
     i {
         background-color: transparent;
-        color: $golden;
     }
 
-}   
+}
 
-.brand-img {
+.fa-circle-user, .fa-calendar-days {
+    color: $golden;
+}
+
+.div__p--inline {
+    display: inline-block;
+    font-size: 0.65em;
+}
+
+.div__p--font {
+    font-family: $Old;
+}
+
+#blog-brand-img {
     display: flex;
     width: 75%;
     margin: 5rem auto;
@@ -102,7 +92,3 @@
 }
 
 
-
-.Times {
-    font-family: $Old;
-}

@@ -1,10 +1,11 @@
 @import '../sass_utils/variables';
 
 
-.bgtext-photo {
+.section__div--bgtext {
     position: relative;
 
     p {
+        font-family: $Old;
         position: absolute;
         font-size: 160px;
         opacity: 0.02;
@@ -13,7 +14,7 @@
     }
 }
 
-.photo-gallery {
+#gallery-photo {
     font-family: $Gill;
     text-align: center;
     padding-bottom: 12rem;
@@ -35,7 +36,7 @@
     }
 }
 
-.grid-gallery {
+#gallery-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -59,7 +60,7 @@
         color: transparent;
     }
 
-    #egg {
+    #img-egg {
         grid-column-start: 1;
         grid-column-end: 3;
         background-image: url(/ressource/assets/gallery/img1gallerybox.jpg);
@@ -72,7 +73,7 @@
         }
     }
 
-    #sandwich {
+    #img-sandwich {
         background-image: url(/ressource/assets/gallery/img2gallerybox.jpg);
 
         &:hover {
@@ -81,7 +82,7 @@
         }
     }
 
-    #pizza {
+    #img-pizza {
         background-image: url(/ressource/assets/gallery/img3gallerybox.jpg);
 
         &:hover {
@@ -90,7 +91,7 @@
         }
     }
 
-    #tomato {
+    #img-tomato {
         background-image: url(/ressource/assets/gallery/img4gallerybox.jpg);
 
         &:hover {
@@ -99,7 +100,7 @@
         }
     }
 
-    #meat {
+    #img-meat {
         background-image: url(/ressource/assets/gallery/img5gallerybox.jpg);
 
         &:hover {
@@ -107,13 +108,13 @@
             color: white;
         }
     }
-    #burger {
+    #img-burger {
         grid-column-start:3;
         grid-column-end: 5;
         background-image: url('/ressource/assets/gallery/img6gallerybox.jpg');
         
         &:hover{
-            background-image: url('/ressource/assets/gallery/img6gallerybox.jpg');
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/ressource/assets/gallery/img6gallerybox.jpg');
             color: $white;
         }
     }

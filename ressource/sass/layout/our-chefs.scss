@@ -1,6 +1,6 @@
 @import '../sass_utils/variables';
 
-.meeting{
+#section-chiefs{
     background-image: url(/ressource/assets/our-chefs/imgbg-ourchefs.jpg);
     background-size: cover;
     background-position: center;
@@ -18,23 +18,11 @@
 
     p {
         color: $white;
-        font-family: $Gill;
     }
 
-    .bgtext-meet {
-        position: relative;
-
-        p {
-        position: absolute;
-        font-size: 160px;
-        opacity: 0.02;
-        top: -150px;
-        font-family: $Old;
-        }
-    }
 }
 
-.chief-image-container {
+#chief-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 2rem;
