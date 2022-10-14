@@ -1,7 +1,7 @@
 
 @import '../sass_utils/mixin.scss';
 
-div:first-child {
+div:first-child:not(#copyright) {
     @include bg-text;
 }
 

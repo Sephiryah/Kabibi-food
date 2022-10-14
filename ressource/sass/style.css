@@ -309,10 +309,10 @@ header nav li:hover {
   border: 30px solid white;
 }
 
-div:first-child {
+div:first-child:not(#copyright) {
   position: relative;
 }
-div:first-child p {
+div:first-child:not(#copyright) p {
   font-family: "Old Standard TT", sans-serif;
   position: absolute;
   font-size: 9em;
